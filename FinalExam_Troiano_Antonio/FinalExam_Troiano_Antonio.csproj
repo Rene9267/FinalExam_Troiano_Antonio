@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A80DAC9F-BEBC-41A9-A61D-95D5C5E8CDC1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>FinalExam_Troiano_Antonio</RootNamespace>
+    <AssemblyName>FinalExam_Troiano_Antonio</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="aiv-audio, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aiv.Audio.0.2.2\lib\net40\aiv-audio.dll</HintPath>
+    </Reference>
+    <Reference Include="aiv-fast2d, Version=1.0.7820.23607, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aiv.Fast2D.1.0.4\lib\net48\aiv-fast2d.dll</HintPath>
+    </Reference>
+    <Reference Include="NVorbis, Version=0.9.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NVorbis.0.9.1\lib\net45\NVorbis.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK, Version=3.2.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenTK.3.2\lib\net20\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actors\Actor.cs" />
+    <Compile Include="Actors\Enemy.cs" />
+    <Compile Include="Actors\Player.cs" />
+    <Compile Include="Controllers\Controller.cs" />
+    <Compile Include="Controllers\JoypadController.cs" />
+    <Compile Include="Controllers\KeyboardController.cs" />
+    <Compile Include="Controllers\KeysList.cs" />
+    <Compile Include="Controllers\MouseController.cs" />
+    <Compile Include="Engine\Camera\CameraBehavior.cs" />
+    <Compile Include="Engine\Camera\CameraMgr.cs" />
+    <Compile Include="Engine\Camera\FollowPointBehavior.cs" />
+    <Compile Include="Engine\Camera\FollowTargetBehavior.cs" />
+    <Compile Include="Engine\Camera\MoveToPointBehavior.cs" />
+    <Compile Include="Engine\Colliders\BoxCollider.cs" />
+    <Compile Include="Engine\Colliders\CircleCollider.cs" />
+    <Compile Include="Engine\Colliders\Collider.cs" />
+    <Compile Include="Engine\Colliders\ColliderFactory.cs" />
+    <Compile Include="Engine\Colliders\Collision.cs" />
+    <Compile Include="Engine\Colliders\CompoundCollider.cs" />
+    <Compile Include="Engine\Colliders\RigidBody.cs" />
+    <Compile Include="Engine\Components\Animation.cs" />
+    <Compile Include="Engine\Components\Component.cs" />
+    <Compile Include="Engine\Components\RandomizeSoundEmitter.cs" />
+    <Compile Include="Engine\Components\SoundEmitter.cs" />
+    <Compile Include="Engine\Game.cs" />
+    <Compile Include="Engine\GameObject.cs" />
+    <Compile Include="Engine\GUI\ProgressBar.cs" />
+    <Compile Include="Engine\GUI\Text\Font.cs" />
+    <Compile Include="Engine\GUI\Text\FontMgr.cs" />
+    <Compile Include="Engine\GUI\Text\TextChar.cs" />
+    <Compile Include="Engine\GUI\Text\TextObject.cs" />
+    <Compile Include="Engine\GUI\WeaponsGUI.cs" />
+    <Compile Include="Engine\IDrawable.cs" />
+    <Compile Include="Engine\IUpdatable.cs" />
+    <Compile Include="Engine\Mgr\DrawMgr.cs" />
+    <Compile Include="Engine\Mgr\GfxMgr.cs" />
+    <Compile Include="Engine\Mgr\PhysicsMgr.cs" />
+    <Compile Include="Engine\Mgr\UpdateMgr.cs" />
+    <Compile Include="Engine\Pathfinding\GridGraph.cs" />
+    <Compile Include="Engine\Pathfinding\GridPathfinder.cs" />
+    <Compile Include="Engine\Pathfinding\Node.cs" />
+    <Compile Include="Engine\Pathfinding\NodePath.cs" />
+    <Compile Include="Engine\Pathfinding\WeightedGraphAlgo.cs" />
+    <Compile Include="Engine\RandomGenerator.cs" />
+    <Compile Include="Engine\RandomTimer.cs" />
+    <Compile Include="Engine\Tiled\TileObj.cs" />
+    <Compile Include="Engine\Tiled\TmxCell.cs" />
+    <Compile Include="Engine\Tiled\TmxGrid.cs" />
+    <Compile Include="Engine\Tiled\TmxLayer.cs" />
+    <Compile Include="Engine\Tiled\TmxNodeParser.cs" />
+    <Compile Include="Engine\Tiled\TmxProperties.cs" />
+    <Compile Include="Engine\Tiled\TmxReader.cs" />
+    <Compile Include="Engine\Tiled\TmxTileset.cs" />
+    <Compile Include="Engine\Tiled\TmxTileType.cs" />
+    <Compile Include="FSM\Attack\AttackState.cs" />
+    <Compile Include="FSM\Follow\FollowMamaState.cs" />
+    <Compile Include="FSM\Follow\FollowState.cs" />
+    <Compile Include="FSM\Idle\IdleEnemyState.cs" />
+    <Compile Include="FSM\Idle\IdleHeroState.cs" />
+    <Compile Include="FSM\Idle\IdleState.cs" />
+    <Compile Include="FSM\SpecialState\HugState.cs" />
+    <Compile Include="FSM\SpecialState\HumanState.cs" />
+    <Compile Include="FSM\State.cs" />
+    <Compile Include="FSM\StateEnum.cs" />
+    <Compile Include="FSM\StateMachine.cs" />
+    <Compile Include="FSM\Walk\WaitingEnemyState.cs" />
+    <Compile Include="FSM\Walk\WalkHeroState.cs" />
+    <Compile Include="FSM\Walk\WalkState.cs" />
+    <Compile Include="Items\AngelFeather.cs" />
+    <Compile Include="Items\Inventory.cs" />
+    <Compile Include="Items\Items.cs" />
+    <Compile Include="Items\Key.cs" />
+    <Compile Include="Items\Map.cs" />
+    <Compile Include="PostProcessingFX\GrayScalePFX.cs" />
+    <Compile Include="PostProcessingFX\HavenScalePFX.cs" />
+    <Compile Include="PostProcessingFX\NegativePFX.cs" />
+    <Compile Include="PostProcessingFX\WobblePFX.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scenes\GamePlayScene\Beatch_Room.cs" />
+    <Compile Include="Scenes\GamePlayScene\EndScene.cs" />
+    <Compile Include="Scenes\GamePlayScene\ForestScene.cs" />
+    <Compile Include="Scenes\GamePlayScene\HomeScene.cs" />
+    <Compile Include="Scenes\GamePlayScene\PlayScene.cs" />
+    <Compile Include="Scenes\Scene.cs" />
+    <Compile Include="Scenes\SecondaryScene\GameOverScene.cs" />
+    <Compile Include="Scenes\SecondaryScene\GoodEndScene.cs" />
+    <Compile Include="Scenes\SecondaryScene\TitleScene.cs" />
+    <Compile Include="SpecialVFX\Explosion1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Assets\Levels\Beatch_Room.tmx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Levels\Camera_Letto.tmx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Levels\Forest_Room.tmx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Levels\Home_Room.tmx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Levels\progetto finale.tmx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="OpenTK.dll.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\AngelShield.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AudioClip\HellSound.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AudioClip\Items\FeatherSound.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AudioClip\Items\Map\CloseMap.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AudioClip\Items\Map\OpenMap.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AudioClip\MamaGhost\CarillonFull.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AudioClip\MamaGhost\DeathIsYourOnlyEscape.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AudioClip\MamaGhost\I%27mGonnaFindYou.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AudioClip\MamaGhost\MamaCarillon.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AudioClip\MamaGhost\MamaScream.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AudioClip\MamaGhost\MamaSong.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AudioClip\MamaGhost\Things_In_The_Shadow.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AudioClip\MamaGhost\WelcomeToHell.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AudioClip\MamaGhost\YuCan%27tSeeMe.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AudioClip\Steps\AsphaltStepsSound.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AudioClip\Steps\GrassStepsSound.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AudioClip\Steps\SanStepsSound.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AudioClip\Steps\WoodSteps.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\comics.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\GhostWife\FollowSprite\Mama_Run_Back.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\GhostWife\FollowSprite\Mama_Run_Front.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\GhostWife\FollowSprite\Mama_Run_Side.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\GhostWife\HumanForm\Human_Mama_Hug.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\GhostWife\HumanForm\Human_Mama_Walk_Down.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\GhostWife\HumanForm\Human_mama_Walk_Side.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\GhostWife\HumanForm\Human_Mama_Walk_Up.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\GhostWife\IdleSprite\GhostWife_Idle_Front.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\GhostWife\IdleSprite\GhostWife_Idle_Side_HumanForm.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\GhostWife\IdleSprite\HEROS_PixelPackTOPDOWN8BIT_Princess Idle U.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\heart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Hero\HEROS_PixelPackTOPDOWN8BIT_Adventurer Death.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Hero\Idle\Hero_Idle_Back.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Hero\Idle\Hero_Idle_Front.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Hero\Idle\Hero_Idle_Hug.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Hero\Idle\Hero_Idle_Side.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Hero\Walk\Hero_Walk_Back.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Hero\Walk\Hero_Walk_Front.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Hero\Walk\Hero_Walk_Side.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Items\Carillon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Items\EasterEgg\Pokeball.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Items\Feather.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Items\Key.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Items\Leaf.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Items\MapOpen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Items\Maps.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Items\Mushroom.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Items\Shell.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Items\Shovel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Levels\aivBG.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Levels\Camera_Letto.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Levels\PixelPack.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\loadingBar_bar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\loadingBar_frame.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\PixelPack.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\PngShieldProva.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\textSheet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\weapon_GUI_selection.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

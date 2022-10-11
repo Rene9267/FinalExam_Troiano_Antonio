@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="11" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" name="PixelPack" tilewidth="16" tileheight="16" spacing="2" margin="1" tilecount="480" columns="16">
+  <image source="PixelPack.png" width="288" height="540"/>
+  <tile id="86">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="87">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="88">
+   <properties>
+    <!--<property name="Collidable" type="bool" value="true"/>-->
+    <property name="Door" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="89">
+   <properties>
+    <!--<property name="Collidable" type="bool" value="true"/>-->
+    <property name="Door" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="102">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="103">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="104">
+   <properties>
+    <!--<property name="Collidable" type="bool" value="true"/>-->
+    <property name="Door" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="105">
+   <properties>
+    <!--<property name="Collidable" type="bool" value="true"/>-->
+    <property name="Door" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="151">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="152">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="153">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="167">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="168">
+   <properties>
+    <property name="Wood" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="169">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="170">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="171">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="176">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="177">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="178">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="179">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="183">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="184">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="185">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="186">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="187">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="192">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="193">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="194">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="195">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="196">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="197">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="198">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="199">
+   <properties>
+    <property name="Wood" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="208">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="209">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="210">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="211">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="212">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="213">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="214">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="215">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="216">
+   <properties>
+    <property name="Wood" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="217">
+   <properties>
+    <property name="Wood" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="219">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="224">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="225">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="226">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="227">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="228">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="229">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="230">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="231">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="232">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="233">
+   <properties>
+    <property name="Collidable" type="bool" value="true"/>
+    <property name="Wood" type="bool" value="true"/>
+    <property name="cost" type="int" value="200"/>
+   </properties>
+  </tile>
+  <tile id="234">
+   <properties>
+    <property name="Wood" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="294">
+   <properties>
+    <property name="Wood" type="bool" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer id="1" name="Livello tile 1" width="11" height="10">
+  <data encoding="csv">
+152,153,153,198,153,177,153,153,153,153,154,
+168,169,169,214,169,201,169,169,169,169,170,
+168,169,169,169,169,216,169,169,169,169,170,
+168,169,169,235,169,169,169,169,169,169,170,
+168,169,235,231,235,169,169,169,235,169,170,
+168,169,169,169,169,169,169,232,233,234,193,
+168,169,169,220,169,169,169,169,235,169,170,
+168,169,169,169,171,295,295,172,169,169,170,
+168,169,169,169,170,169,169,168,169,169,170,
+184,185,185,185,186,105,106,184,185,185,186
+</data>
+ </layer>
+</map>
